@@ -147,7 +147,7 @@ An example config object is:
         "Bot": disbot.generic.text("Beep Boop!")
     },
     extras: {
-        helpmsg: "github",
+        helpmsg: "https://github.com/RedMikePumpkin/disbot/issues/new",
         social: [
             "Discord: discord channel",
             "Twitter: twitter",
