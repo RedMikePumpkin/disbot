@@ -22,6 +22,8 @@ do:
 ' '-- package.json
 ```
 
+you will also need discord.js, you can install it using `npm install discord.js`
+
 then use `var disbot = require("../DisBot");` to add DisBot to your code
 
 # docs
