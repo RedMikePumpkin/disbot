@@ -108,3 +108,51 @@ send a text-to-speech message
 - channelCode: <`string`>: the channel code to send to
 
 returns `nothing`
+
+## config object
+The config object passed into `disbot.init` contains all of the information needed to run the bot.
+
+An example config object is:
+```js
+{
+    botName: "Bot",
+    token: "<BOT TOKEN>",
+    channels: [
+        "<bot-spam channel>"
+    ],
+    otherChannels: [
+        "<rules channel>",
+        "<general channel>"
+    ],
+    commands: {
+        "!help": {
+            desc: "!help <-cmd: str>: displays this. If -cmd is set, displays more command info",
+            ddsc: "!help <-cmd: str>: displays this. If -cmd is set, displays more command info",
+            func: disbot.generic.help(0xFF7F00),
+            args: [
+                [],
+                [
+                    ["str", "-cmd", "", true]
+                ]
+            ]
+        },
+        "!links": {
+            desc: "!links: gives links to stuff",
+            ddsc: "!links: displays social URLs",
+            func: disbot.generic.social(0xFFFF00),
+            args: null
+        },
+    },
+    mentionCommands: {
+        "Bot": disbot.generic.text("Beep Boop!")
+    },
+    extras: {
+        helpmsg: "github",
+        social: [
+            "Discord: discord channel",
+            "Twitter: twitter",
+            "Youtube: youtube"
+        ]
+    }
+}
+```
