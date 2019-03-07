@@ -1,9 +1,9 @@
 # DisBot
-node.js library for Discord chat bots
+Node.js library for Discord command bots
 
 # installing
-currently DisBot is not a node module, so you instead put the disbot file in your project directory
-so instead of:
+Currently DisBot is not a node module, so you instead put the disbot file in your project directory. 
+So instead of:
 ```
 |-: project
 | |-: node_modules
